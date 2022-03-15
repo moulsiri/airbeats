@@ -1,0 +1,317 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'gilroy';
+}
+html,body{
+    height:100%;
+    width:100%;
+
+}
+a{
+    text-decoration:none;
+}
+#main{
+    width:100%;
+    min-height:100vh;
+    display: flex;
+    /* overflow: hidden; */
+    /* cursor: none; */
+
+
+}
+#ovly{
+    min-height: 100vh;
+    width: 100%;
+    position:absolute;
+    background-color: #fff;
+    display: flex;
+    z-index: 99;
+
+}
+.ov{
+    width: 20%;
+    height:100vh;
+    /* border:1px solid rgba(255, 255, 255, 0.116); */
+    background-color: #39abe0;
+    /* background-color: #fff; */ 
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    will-change: transition;
+    transform: rotateY(45deg);
+    opacity: 0;
+
+}
+#box{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left: 50%;
+    width: 50%;
+    z-index: 999;
+    height: 5vh;
+    /* background-color: #fff; */
+    overflow: hidden;
+}
+#box h3{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+    color:#fff;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    top:150%;
+    display: flex;
+    align-items: center;
+
+    left: 50%;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+
+}
+#box h3 i{
+    margin-right: .5em;
+}
+#nav{
+    width:100%;
+    height: 12.5vh;
+    /* background-color: rgba(255, 0, 0, 0.596); */
+    position: fixed;
+    display:flex;
+    justify-content: space-between;
+    font-size: 15px;
+    z-index: 9;
+    padding:0 5em;
+    transition: height cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+    align-items:center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.041);
+}
+
+#nlft #logo{
+    display:flex;
+    align-items: center;
+    
+
+}
+#logo h3{
+    font-weight: 600;
+}
+#logo h3,#logo i{
+    font-size: 1.4em;
+}
+#logo i{
+    margin-right: .5em;
+
+}
+#nrt a{
+    text-decoration: none;
+    color:#000;
+    font-size: .9em;
+    margin-left: 1.2em;
+    font-weight: 500;
+        display: initial;
+        letter-spacing: .1em;
+}
+#nrt a:nth-child(4){
+    background:linear-gradient(to bottom right,#2fbdff,#0f2f40);
+    padding: 1em;
+    color:#fff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+#nrt i{
+    display: none;
+}
+#lft{
+    width:40%;
+    min-height: inherit;
+    /* background-color:rgb(243, 167, 167); */
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 4em; */
+    padding-left: 4em;
+    justify-content:flex-end;
+}
+#lcntnt{
+    height: 70vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+}
+#ltxt{
+    /* background-color: rebeccapurple; */
+    height: 40%;
+    font-size: 15px;
+}
+#ltxt h3{
+    font-weight: 800;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: .1em;
+
+}
+#ltxt h1{
+    font-size: 2.5em;
+    font-weight: 900;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+    font-family: "ogg";
+    letter-spacing: .1em;
+
+}
+#ltxt p{
+    margin: 1.5em 0;
+    font-size: .85em;
+    letter-spacing: .05em;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+    width: 80%;
+}
+#ltxt a{
+    margin-top: 1em;
+    color:#000;
+    text-decoration: none;
+    display:flex;
+    align-items:center;
+    margin-right: 1em;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+
+    font-weight: 700;
+
+}
+#ltxt a i{
+    margin-left: .2em;
+
+}
+#ltag{
+    margin-bottom: 4em;
+}
+#ltag a{
+    color:#000;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#rt{
+    width:60%;
+    min-height: inherit;
+    /* background-color: rgb(176, 241, 176); */
+}
+#container{
+    width: 40%;
+    left: 65%;
+    height: 60vh;
+   /* background-color: firebrick; */
+    /* filter: blur(10px); */
+    position:absolute;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+}
+#bg{
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(to bottom right,#30e9ff,#0d0551);
+    filter: blur(180px);
+    position: absolute;
+    top: 55%;
+    transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+    will-change: transition;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+#container img{
+    will-change: transition;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1) 1s;
+
+}
+#container img:nth-child(2){
+    position: absolute;
+    top: 30%;
+    width: 50%;
+    filter: blur(10px);
+    transform: scale(.5);
+    left: 85%;
+
+    /* object-fit: cover; */
+}
+#container img:nth-child(3){
+    position: absolute;
+    width: 45%;
+    top: 10%;
+    transform: scale(.8);
+    filter: blur(10px);
+    left: 45%;
+    /* object-fit: cover; */
+}
+#container img:nth-child(4){
+    position: absolute;
+    width: 50%;
+    top: 28%;
+    transform: scale(1.6);
+    transition:cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+    left: -20%;
+    /* object-fit: cover; */
+}
+#rt>a{
+    position:absolute;
+    bottom:10%;
+    right:10%;
+    letter-spacing: .1em;
+    color:#000;
+}
+#rt>a span:nth-child(1){
+    font-weight: 700;
+    font-size: 1.5em;
+}
+#slideBtn{
+    border:none;
+    background-color:transparent;
+    font-size: 15px;
+    border:1px solid #000;
+    border-radius: 50%;
+    height: 2em;
+    cursor: pointer;
+    transform: translate(-50%,-50%);
+    position:absolute;
+    top:89%;
+    left:20%;
+    width: 2em;
+
+}
+#slideBtn:active{
+    /* background:linear-gradient(to bottom,#1e2a78,#ff2e4c); */
+    /* filter: blur(20px); */
+    border:none;
+    /* transform: scale(2); */
+    will-change: transition;
+
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+}
+
+@media(max-width:650px) {
+    #nav{
+        font-size: 10px;
+        padding:0 2em;
+    }
+    #nrt a{
+        display: none;
+    }
+    #nrt i{
+        display: initial;
+        cursor: pointer;
+        background:linear-gradient(to bottom right,#2fbdff,#0f2f40);
+        padding: 1em;
+        color:#fff;
+        border-radius: 50%;
+    }
+    #main{
+        flex-direction: column;
+    }
+    #lft{
+        width: 100%;
+    }
+    #rt{
+        width: 100%;
+        order: 1;
+    }
+}
