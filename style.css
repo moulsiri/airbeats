@@ -309,9 +309,22 @@ a{
     }
     #lft{
         width: 100%;
+        justify-content: flex-start;
+        min-height: fit-content;
+        order: 2;
     }
     #rt{
         width: 100%;
         order: 1;
+        position: relative;
+        overflow: hidden;
+        /* background-color: yellow; */
+        min-height: 60vh;
     }
+    #container{
+        height: 35vh;
+        width: 75%;
+    }
+    
+
 }

@@ -10,8 +10,8 @@ tl.to(".ov",{
     duration:1,
 })
 .to("#ovly",{
-    top:"-100%",
-})
+    top:"-110%",
+},"+=1")
 .from("#nav",{
     height:0,
     duration:1
