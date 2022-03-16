@@ -36,6 +36,10 @@ productIntro(counter)
     opacity:0,
     y:20
 })
+.from("#slideBtn",{
+    y:20,
+    opacity:0
+})
 
 
 
@@ -98,13 +102,13 @@ function productIntro(indx){
     document.querySelector("#nrt i").style.background=`linear-gradient(${data[indx].bgColor})`;
     document.querySelector("#nrt a:nth-child(4)").style.background=`linear-gradient(${data[indx].bgColor})`;
     // document.querySelector("#slideBtn:active").style.background=`linear-gradient(${data[indx].bgColor})`;
-    document.querySelector("#rt>a span:nth-child(1)").textContent=indx+1;
+    document.querySelector("#rt>a span:nth-child(1)").textContent="0"+Number(indx+1);
     if(indx<data.length-1){
-        document.querySelector("#rt>a span:nth-child(2)").textContent=indx+2;
+        document.querySelector("#rt>a span:nth-child(2)").textContent="0"+Number(indx+2);
 
     }
     else{
-    document.querySelector("#rt>a span:nth-child(2)").textContent=1;
+    document.querySelector("#rt>a span:nth-child(2)").textContent=01;
 
     }
     let tl=gsap.timeline();
