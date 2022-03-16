@@ -313,8 +313,14 @@ a{
         justify-content: flex-start;
         min-height: fit-content;
         order: 2;
-        padding-top: 4em;
         padding-left: 2em;
+    }
+    #ltxt{
+        height: 60%;
+        /* background-color: #2fbdff; */
+    }
+    #ltag{
+        margin-bottom: 2em;
     }
     #rt{
         width: 100%;
